@@ -51,7 +51,7 @@ int exploracja = 0;
 while(graDziala && punktyŻycia > 0)
 {
     Console.ForegroundColor = ConsoleColor.Cyan;
-    Console.WriteLine($"=== Hello Adventurer ===");
+    Console.WriteLine($"\n=== Hello Adventurer ===");
     Console.ResetColor();
     Console.WriteLine($"Tura: {numerTury}");
     Console.WriteLine($"Bohater: {imie}");
@@ -77,7 +77,7 @@ while(graDziala && punktyŻycia > 0)
         case 2:
             if(mikstur > 0)
             {
-                if(maksymalneZdrowie - punktyŻycia <= 20)
+                if(maksymalneZdrowie - punktyŻycia >= 20)
                 {
                     Console.ForegroundColor = ConsoleColor.Green;
                     Console.WriteLine($"Zużyłem 1 miksturę i dostałem 20 punktów zdrowia");
@@ -91,14 +91,19 @@ while(graDziala && punktyŻycia > 0)
                     Console.ResetColor();
                     punktyŻycia += maksymalneZdrowie - punktyŻycia;
                 }
+                mikstur--;
             }
             else {Console.ForegroundColor = ConsoleColor.Red;;Console.WriteLine($"Nie masz mikstur!");Console.ResetColor();}
             break;
         case 3:
             if(zloto >= 3)
             {
+                Console.ForegroundColor = ConsoleColor.Green;
+                Console.WriteLine($"Miałeś dobry odpoczynek");
                 zloto -= 3;
-                punktyŻycia += 5;
+                if(punktyŻycia <= 95){punktyŻycia += 5;Console.WriteLine($"Straciłeś 3 sztuki złota i dostałeś 5 punktów życia");}
+                else{punktyŻycia = 100;Console.WriteLine($"Straciłeś 3 sztuki złota i dostałeś teraz jesteś pewien życia");}
+                Console.ResetColor();
             }
             else {Console.ForegroundColor = ConsoleColor.Red;Console.WriteLine($"Nie masz wystarczająco złota!");Console.ResetColor();}
             break;
