@@ -62,8 +62,9 @@ while(graDziala && punktyŻycia > 0)
     Console.WriteLine($"3 - Odpocznij");
     Console.WriteLine($"4 - Pokaż statystyki");
     Console.WriteLine($"5 - Zakończ gre\n");
-    
-    int wybor = int.Parse(Console.ReadLine());
+
+    int wybor = 0;
+    while (!int.TryParse(Console.ReadLine(), out wybor));
     switch(wybor)
     {
         case 1:
@@ -102,7 +103,7 @@ while(graDziala && punktyŻycia > 0)
                 Console.WriteLine($"Miałeś dobry odpoczynek");
                 zloto -= 3;
                 if(punktyŻycia <= 95){punktyŻycia += 5;Console.WriteLine($"Straciłeś 3 sztuki złota i dostałeś 5 punktów życia");}
-                else{punktyŻycia = 100;Console.WriteLine($"Straciłeś 3 sztuki złota i dostałeś teraz jesteś pewien życia");}
+                else{punktyŻycia = 100;Console.WriteLine($"Straciłeś 3 sztuki złota i teraz jesteś pewien życia");}
                 Console.ResetColor();
             }
             else {Console.ForegroundColor = ConsoleColor.Red;Console.WriteLine($"Nie masz wystarczająco złota!");Console.ResetColor();}
@@ -141,10 +142,10 @@ while(graDziala && punktyŻycia > 0)
             Console.ForegroundColor = ConsoleColor.Cyan;
             Console.WriteLine($"\nEksploracj wykonano: {exploracja} ");
             Console.ResetColor();
-            numerTury--;
             continue;
         case 5:
             graDziala = false;
+            numerTury--;
             break;
         default:
             Console.ForegroundColor = ConsoleColor.Red;
