@@ -1,0 +1,14 @@
+Z:\Program\rozwijamy klasy Player i Enemy\bin\Debug\net10.0\ConsoleApp1.exe
+Z:\Program\rozwijamy klasy Player i Enemy\bin\Debug\net10.0\ConsoleApp1.deps.json
+Z:\Program\rozwijamy klasy Player i Enemy\bin\Debug\net10.0\ConsoleApp1.runtimeconfig.json
+Z:\Program\rozwijamy klasy Player i Enemy\bin\Debug\net10.0\ConsoleApp1.dll
+Z:\Program\rozwijamy klasy Player i Enemy\bin\Debug\net10.0\ConsoleApp1.pdb
+Z:\Program\rozwijamy klasy Player i Enemy\obj\Debug\net10.0\ConsoleApp1.GeneratedMSBuildEditorConfig.editorconfig
+Z:\Program\rozwijamy klasy Player i Enemy\obj\Debug\net10.0\ConsoleApp1.AssemblyInfoInputs.cache
+Z:\Program\rozwijamy klasy Player i Enemy\obj\Debug\net10.0\ConsoleApp1.AssemblyInfo.cs
+Z:\Program\rozwijamy klasy Player i Enemy\obj\Debug\net10.0\ConsoleApp1.csproj.CoreCompileInputs.cache
+Z:\Program\rozwijamy klasy Player i Enemy\obj\Debug\net10.0\ConsoleApp1.dll
+Z:\Program\rozwijamy klasy Player i Enemy\obj\Debug\net10.0\refint\ConsoleApp1.dll
+Z:\Program\rozwijamy klasy Player i Enemy\obj\Debug\net10.0\ConsoleApp1.pdb
+Z:\Program\rozwijamy klasy Player i Enemy\obj\Debug\net10.0\ConsoleApp1.genruntimeconfig.cache
+Z:\Program\rozwijamy klasy Player i Enemy\obj\Debug\net10.0\ref\ConsoleApp1.dll
